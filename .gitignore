@@ -7,9 +7,7 @@
 npm-debug.log
 yarn-error.log
 node_modules
-dist
 coverage
-/native
 .docz/
 .rpt2_cache
 settings.json
