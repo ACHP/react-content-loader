@@ -4,7 +4,7 @@ import Holder, { Rect, Circle } from '../Holder'
 import { IContentLoaderProps } from '../'
 
 const ReactContentLoaderFacebook: React.FC<IContentLoaderProps> = props => (
-  <Holder {...props}>
+  <Holder viewBox="0 0 400 130" {...props}>
     <Rect x="70" y="15" rx="4" ry="4" width="117" height="6" />
     <Rect x="70" y="35" rx="3" ry="3" width="85" height="6" />
     <Rect x="0" y="80" rx="3" ry="3" width="350" height="6" />

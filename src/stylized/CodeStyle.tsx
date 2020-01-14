@@ -4,7 +4,7 @@ import Holder from '../Holder'
 import { IContentLoaderProps } from '../'
 
 const ReactContentLoaderCode: React.FC<IContentLoaderProps> = props => (
-  <Holder {...props}>
+  <Holder viewBox="0 0 400 130" {...props}>
     <rect x="0" y="0" rx="3" ry="3" width="70" height="10" />
     <rect x="80" y="0" rx="3" ry="3" width="100" height="10" />
     <rect x="190" y="0" rx="3" ry="3" width="10" height="10" />

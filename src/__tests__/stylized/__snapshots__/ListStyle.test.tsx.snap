@@ -3,23 +3,25 @@
 exports[`ListStyle renders correctly 1`] = `
 <svg
   aria-label="Loading interface..."
+  height={130}
   preserveAspectRatio="none"
   role="img"
   style={Object {}}
   viewBox="0 0 400 130"
+  width={400}
 >
   <title>
     Loading interface...
   </title>
   <rect
     clipPath="url(#ListStyle-idClip)"
-    height={130}
+    height="100%"
     style={
       Object {
         "fill": "url(#ListStyle-idGradient)",
       }
     }
-    width={400}
+    width="100%"
     x="0"
     y="0"
   />

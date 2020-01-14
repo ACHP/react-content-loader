@@ -11,8 +11,8 @@ exports[`CodeStyle renders correctly 1`] = `
   <Rect
     clipPath="url(#CodeStyle-idGradient)"
     fill="url(#CodeStyle-idClip)"
-    height={130}
-    width={400}
+    height="100%"
+    width="100%"
     x="0"
     y="0"
   />

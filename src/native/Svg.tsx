@@ -82,7 +82,7 @@ class NativeSvg extends Component<RequiredIContentLoaderProps, State> {
       width,
       rtl,
       style,
-      viewBox = `0 0 ${width} ${height}`,
+      viewBox,
       ...props
     } = this.props
 
@@ -92,7 +92,6 @@ class NativeSvg extends Component<RequiredIContentLoaderProps, State> {
 
     const rtlStyle = rtl ? { transform: [{ rotateY: '180deg' }] } : {}
     const composedStyle = Object.assign(style, rtlStyle)
-    const [_vbX, _vbY, vbWidth, vbHeight] = viewBox.split(' ')
 
     // Remove unnecessary keys
     delete props.id
@@ -111,8 +110,8 @@ class NativeSvg extends Component<RequiredIContentLoaderProps, State> {
         <Rect
           x="0"
           y="0"
-          width={parseInt(vbWidth)}
-          height={parseInt(vbHeight)}
+          width="100%"
+          height="100%"
           fill={`url(#${this.idClip})`}
           clipPath={`url(#${this.idGradient})`}
         />

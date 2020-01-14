@@ -36,7 +36,8 @@ export default ({
       style={{ ...style, ...rtlStyle }}
       className={className}
       aria-label={ariaLabel ? ariaLabel : null}
-      viewBox={`0 0 ${width} ${height}`}
+      width={width}
+      height={height}
       preserveAspectRatio={preserveAspectRatio}
       {...props}
     >
@@ -44,8 +45,8 @@ export default ({
       <rect
         x="0"
         y="0"
-        width={width}
-        height={height}
+        width="100%"
+        height="100%"
         clipPath={`url(${baseUrl}#${idClip})`}
         style={{ fill: `url(${baseUrl}#${idGradient})` }}
       />

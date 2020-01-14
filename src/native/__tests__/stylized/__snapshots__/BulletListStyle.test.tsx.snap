@@ -11,8 +11,8 @@ exports[`BulletListStyle renders correctly 1`] = `
   <Rect
     clipPath="url(#BulletListStyle-idGradient)"
     fill="url(#BulletListStyle-idClip)"
-    height={130}
-    width={400}
+    height="100%"
+    width="100%"
     x="0"
     y="0"
   />

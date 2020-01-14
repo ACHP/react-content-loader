@@ -11,8 +11,8 @@ exports[`ListStyle renders correctly 1`] = `
   <Rect
     clipPath="url(#ListStyle-idGradient)"
     fill="url(#ListStyle-idClip)"
-    height={130}
-    width={400}
+    height="100%"
+    width="100%"
     x="0"
     y="0"
   />

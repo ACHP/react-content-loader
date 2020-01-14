@@ -11,8 +11,8 @@ exports[`InstagramStyle renders correctly 1`] = `
   <Rect
     clipPath="url(#InstagramStyle-idGradient)"
     fill="url(#InstagramStyle-idClip)"
-    height={480}
-    width={400}
+    height="100%"
+    width="100%"
     x="0"
     y="0"
   />

@@ -118,19 +118,18 @@ var NativeSvg = /** @class */ (function (_super) {
         return _this;
     }
     NativeSvg.prototype.render = function () {
-        var _a = this.props, children = _a.children, height = _a.height, primaryColor = _a.primaryColor, secondaryColor = _a.secondaryColor, width = _a.width, rtl = _a.rtl, style = _a.style, _b = _a.viewBox, viewBox = _b === void 0 ? "0 0 " + width + " " + height : _b, props = __rest(_a, ["children", "height", "primaryColor", "secondaryColor", "width", "rtl", "style", "viewBox"]);
+        var _a = this.props, children = _a.children, height = _a.height, primaryColor = _a.primaryColor, secondaryColor = _a.secondaryColor, width = _a.width, rtl = _a.rtl, style = _a.style, viewBox = _a.viewBox, props = __rest(_a, ["children", "height", "primaryColor", "secondaryColor", "width", "rtl", "style", "viewBox"]);
         var offset1 = offsetValueBound(this.state.offset - 1);
         var offset2 = offsetValueBound(this.state.offset);
         var offset3 = offsetValueBound(this.state.offset + 1);
         var rtlStyle = rtl ? { transform: [{ rotateY: '180deg' }] } : {};
         var composedStyle = Object.assign(style, rtlStyle);
-        var _c = viewBox.split(' '), _vbX = _c[0], _vbY = _c[1], vbWidth = _c[2], vbHeight = _c[3];
         // Remove unnecessary keys
         delete props.id;
         delete props.animate;
         delete props.speed;
         return (React__default.createElement(Svg__default, __assign({ viewBox: viewBox, width: width, height: height, preserveAspectRatio: "none", style: composedStyle }, props),
-            React__default.createElement(Svg.Rect, { x: "0", y: "0", width: parseInt(vbWidth), height: parseInt(vbHeight), fill: "url(#" + this.idClip + ")", clipPath: "url(#" + this.idGradient + ")" }),
+            React__default.createElement(Svg.Rect, { x: "0", y: "0", width: "100%", height: "100%", fill: "url(#" + this.idClip + ")", clipPath: "url(#" + this.idGradient + ")" }),
             React__default.createElement(Svg.Defs, null,
                 React__default.createElement(Svg.ClipPath, { id: this.idGradient }, children),
                 React__default.createElement(Svg.LinearGradient, { id: this.idClip, x1: '-100%', y1: 0, x2: '100%', y2: 0 },

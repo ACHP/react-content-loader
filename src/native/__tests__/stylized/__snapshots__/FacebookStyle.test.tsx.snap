@@ -11,8 +11,8 @@ exports[`FacebookStyle renders correctly 1`] = `
   <Rect
     clipPath="url(#FacebookStyle-idGradient)"
     fill="url(#FacebookStyle-idClip)"
-    height={130}
-    width={400}
+    height="100%"
+    width="100%"
     x="0"
     y="0"
   />

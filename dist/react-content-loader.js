@@ -55,9 +55,9 @@
         var rtlStyle = rtl ? { transform: 'scaleX(-1)' } : {};
         var keyTimes = "0; " + interval + "; 1";
         var dur = speed + "s";
-        return (React.createElement("svg", __assign({ role: "img", style: __assign(__assign({}, style), rtlStyle), className: className, "aria-label": ariaLabel ? ariaLabel : null, viewBox: "0 0 " + width + " " + height, preserveAspectRatio: preserveAspectRatio }, props),
+        return (React.createElement("svg", __assign({ role: "img", style: __assign(__assign({}, style), rtlStyle), className: className, "aria-label": ariaLabel ? ariaLabel : null, width: width, height: height, preserveAspectRatio: preserveAspectRatio }, props),
             ariaLabel ? React.createElement("title", null, ariaLabel) : null,
-            React.createElement("rect", { x: "0", y: "0", width: width, height: height, clipPath: "url(" + baseUrl + "#" + idClip + ")", style: { fill: "url(" + baseUrl + "#" + idGradient + ")" } }),
+            React.createElement("rect", { x: "0", y: "0", width: '100%', height: '100%', clipPath: "url(" + baseUrl + "#" + idClip + ")", style: { fill: "url(" + baseUrl + "#" + idGradient + ")" } }),
             React.createElement("defs", null,
                 React.createElement("clipPath", { id: idClip }, children),
                 React.createElement("linearGradient", { id: idGradient },
@@ -90,7 +90,7 @@
         return (React.createElement(Svg, __assign({}, mergedProps), props.children || React.createElement(InitialComponent, __assign({}, mergedProps))));
     };
 
-    var ReactContentLoaderFacebook = function (props) { return (React.createElement(ContentLoader, __assign({}, props),
+    var ReactContentLoaderFacebook = function (props) { return (React.createElement(ContentLoader, __assign({ viewBox: '0 0 380 140' }, props),
         React.createElement("rect", { x: "70", y: "15", rx: "4", ry: "4", width: "117", height: "6.4" }),
         React.createElement("rect", { x: "70", y: "35", rx: "3", ry: "3", width: "85", height: "6.4" }),
         React.createElement("rect", { x: "0", y: "80", rx: "3", ry: "3", width: "350", height: "6.4" }),
@@ -98,13 +98,13 @@
         React.createElement("rect", { x: "0", y: "120", rx: "3", ry: "3", width: "201", height: "6.4" }),
         React.createElement("circle", { cx: "30", cy: "30", r: "30" }))); };
 
-    var ReactContentLoaderInstagram = function (props) { return (React.createElement(ContentLoader, __assign({}, props, { height: 480 }),
+    var ReactContentLoaderInstagram = function (props) { return (React.createElement(ContentLoader, __assign({ viewBox: '0 0 400 480' }, props),
         React.createElement("circle", { cx: "30", cy: "30", r: "30" }),
         React.createElement("rect", { x: "75", y: "13", rx: "4", ry: "4", width: "100", height: "13" }),
         React.createElement("rect", { x: "75", y: "37", rx: "4", ry: "4", width: "50", height: "8" }),
         React.createElement("rect", { x: "0", y: "70", rx: "5", ry: "5", width: "400", height: "400" }))); };
 
-    var ReactContentLoaderCode = function (props) { return (React.createElement(ContentLoader, __assign({}, props),
+    var ReactContentLoaderCode = function (props) { return (React.createElement(ContentLoader, __assign({ viewBox: '0 0 285 80' }, props),
         React.createElement("rect", { x: "0", y: "0", rx: "3", ry: "3", width: "70", height: "10" }),
         React.createElement("rect", { x: "80", y: "0", rx: "3", ry: "3", width: "100", height: "10" }),
         React.createElement("rect", { x: "190", y: "0", rx: "3", ry: "3", width: "10", height: "10" }),
@@ -115,7 +115,7 @@
         React.createElement("rect", { x: "185", y: "40", rx: "3", ry: "3", width: "60", height: "10" }),
         React.createElement("rect", { x: "0", y: "60", rx: "3", ry: "3", width: "30", height: "10" }))); };
 
-    var ReactContentLoaderListStyle = function (props) { return (React.createElement(ContentLoader, __assign({}, props),
+    var ReactContentLoaderListStyle = function (props) { return (React.createElement(ContentLoader, __assign({ viewBox: '0 0 250 110' }, props),
         React.createElement("rect", { x: "0", y: "0", rx: "3", ry: "3", width: "250", height: "10" }),
         React.createElement("rect", { x: "20", y: "20", rx: "3", ry: "3", width: "220", height: "10" }),
         React.createElement("rect", { x: "20", y: "40", rx: "3", ry: "3", width: "170", height: "10" }),
@@ -123,7 +123,7 @@
         React.createElement("rect", { x: "20", y: "80", rx: "3", ry: "3", width: "200", height: "10" }),
         React.createElement("rect", { x: "20", y: "100", rx: "3", ry: "3", width: "80", height: "10" }))); };
 
-    var ReactContentLoaderBulletList = function (props) { return (React.createElement(ContentLoader, __assign({}, props),
+    var ReactContentLoaderBulletList = function (props) { return (React.createElement(ContentLoader, __assign({ viewBox: '0 0 245 120' }, props),
         React.createElement("circle", { cx: "10", cy: "20", r: "8" }),
         React.createElement("rect", { x: "25", y: "15", rx: "5", ry: "5", width: "220", height: "10" }),
         React.createElement("circle", { cx: "10", cy: "50", r: "8" }),
